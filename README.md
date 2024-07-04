@@ -12,11 +12,25 @@
 
 ## Table of Contents
 
-1. [Dataset](#Dataset)
+1. [Training Dataset](#Training-Dataset)
 
-
-## Dataset
-The training set is availbale at the following link:
-
+## Training Dataset 
 [Dataset web page](https://aimagelab.ing.unimore.it/imagelab/page.asp?IdPage=57) |
-[HF Train Set](https://huggingface.co/datasets/elsaEU/ELSA_D3)
+[🤗 HuggingFace Dataset](https://huggingface.co/datasets/elsaEU/ELSA_D3)
+
+The Diffusion-generated Deepfake Detection (D<sup>3</sup>) Dataset is a comprehensive collection designed for large-scale deepfake detection. It includes 9.2 million generated images, created using four state-of-the-art diffusion model generators. Each image is generated based on realistic textual descriptions from the LAION-400M dataset.
+
+- **Images**: 11.5 million images
+- **Records**: 2.3 million records
+- **Generators**: Stable Diffusion 1.4, Stable Diffusion 2.1, Stable Diffusion XL, and DeepFloyd IF
+- **Aspect Ratios**: 256x256, 512x512, 640x480, 640x360
+- **Encodings**: BMP, GIF, JPEG, TIFF, PNG
+
+The D<sup>3</sup> dataset is part of the European Lighthouse on Secure and Safe AI (ELSA) project, which aims to develop effective solutions for detecting and mitigating the spread of deepfake images in multimedia content.
+
+To try D<sup>3</sup> you can access it using
+
+```python
+from datasets import load_dataset
+elsa_data = load_dataset("elsaEU/ELSA_D3", split="train", streaming=True)
+```
