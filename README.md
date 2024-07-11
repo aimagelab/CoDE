@@ -19,8 +19,10 @@
 2. [Citation](#citation)
 
 ## Training Dataset 
+[🎯 Project web page](https://aimagelab.github.io/CoDE/) |
 [Dataset web page](https://aimagelab.ing.unimore.it/imagelab/page.asp?IdPage=57) |
-[🤗 HuggingFace Dataset](https://huggingface.co/datasets/elsaEU/ELSA_D3)
+[🤗 HuggingFace Dataset](https://huggingface.co/datasets/elsaEU/ELSA_D3) |
+[🤗 HuggingFace Model](https://huggingface.co/aimagelab) |
 
 The Diffusion-generated Deepfake Detection (D<sup>3</sup>) Dataset is a comprehensive collection designed for large-scale deepfake detection. It includes 9.2 million generated images, created using four state-of-the-art diffusion model generators. Each image is generated based on realistic textual descriptions from the LAION-400M dataset.
 
