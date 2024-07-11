@@ -1,6 +1,9 @@
 <div align="center">
   <h1>CoDE (Contrastive Deepfake Embeddings)</h1>
-  <h2>Contrasting Deepfakes Diffusion via Contrastive Learning and Global-Local Similarities</h2>
+  <h2>Contrasting Deepfakes Diffusion via Contrastive Learning and Global-Local Similarities
+
+  (ECCV 2024)
+  </h2>
    
 </div>
 
@@ -12,7 +15,8 @@
 
 ## Table of Contents
 
-1. [Training Dataset](#Training-Dataset)
+1. [Training Dataset](#training-dataset)
+2. [Citation](#citation)
 
 ## Training Dataset 
 [Dataset web page](https://aimagelab.ing.unimore.it/imagelab/page.asp?IdPage=57) |
@@ -33,4 +37,16 @@ To try D<sup>3</sup> you can access it using
 ```python
 from datasets import load_dataset
 elsa_data = load_dataset("elsaEU/ELSA_D3", split="train", streaming=True)
+```
+
+## Citation
+
+Please cite with the following BibTeX:
+```
+@inproceedings{baraldi2024contrastive,
+  title={{Contrasting Deepfakes Diffusion via Contrastive Learning and Global-Local Similarities}},
+  author={Baraldi, Lorenzo and Cocchi, Federico and Cornia, Marcella and Baraldi, Lorenzo and Nicolosi, Alessandro and Cucchiara, Rita},
+  booktitle={Proceedings of the European Conference on Computer Vision},
+  year={2024}
+}
 ```
