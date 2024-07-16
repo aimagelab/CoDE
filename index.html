@@ -118,8 +118,18 @@
     <div class="hero-body">
       <!--<img src="./static/images/huggingface_d3_gif.gif">-->
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">D<sup>3</sup></span> is a multimodal dataset that contains 9.2M generated images, generated with four SoTA diffusion model generators.
-        Each image is generated starting from a <a href="https://laion.ai/blog/laion-400-open-dataset/"> LAION-400M </a> caption, thus referring to a realistic textual description.  
+      <p>
+        We introduce <strong>CoDE</strong> (Contrastive Deepfake Embeddings), a novel approach that utilize contrastive learning and global-local similarities 
+        to create an effective embedding space specifically for deepfake detection. 
+        CoDE achieves state-of-the-art accuracy and generalization across various image generators, 
+        including some that were not seen during training.
+      </p>
+      <p>
+        Additionally, we release the <span class="dnerf">D<sup>3</sup></span> dataset used for the train, 
+        which consists of 9.2 million images generated using different diffusion models.
+      </p>
+        <!--  is a multimodal dataset that contains 9.2M generated images, generated with four SoTA diffusion model generators.
+        Each image is generated starting from a <a href="https://laion.ai/blog/laion-400-open-dataset/"> LAION-400M </a> caption, thus referring to a realistic textual description.   -->
       </h2>
     </div>
   </div>
@@ -200,7 +210,19 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
-          method description
+          <p>
+          The CoDE model architecture is built on a ViT-Tiny, which balances high accuracy with a low number of parameters. 
+          This makes it particularly suitable for production environments due to its high throughput of processed images per second. 
+          To enhance robustness against post-processing operations often applied to images in real-world scenarios, 
+          various transformations are applied to images during training. 
+          These transformations are sampled in both type and intensity. 
+          </p>
+          <p>
+          Additionally, both local and global crops of images are considered to capture contextual features and fine details, 
+          which are useful for identifying traces left by different generative models. 
+          Overall, during training CoDE employs a combination of loss functions, leveraging global and multi-scale features 
+          to optimally position the features in the embedding space for deepfake detection.
+          </p>
         </div>
       </div>
     </div>
