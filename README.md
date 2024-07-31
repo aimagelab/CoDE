@@ -20,7 +20,7 @@
 
 ## Training Dataset 
 [🎯 Project web page](https://aimagelab.github.io/CoDE/) |
-[Paper]([https://aimagelab.github.io/CoDE/](https://arxiv.org/pdf/2407.20337)) |
+[Paper](https://arxiv.org/pdf/2407.20337) |
 [Dataset web page](https://aimagelab.ing.unimore.it/imagelab/page.asp?IdPage=57) |
 [🤗 HuggingFace Dataset](https://huggingface.co/datasets/elsaEU/ELSA_D3) |
 [🤗 HuggingFace Model](https://huggingface.co/aimagelab) |
