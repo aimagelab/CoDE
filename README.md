@@ -22,6 +22,7 @@
 [🎯 Project web page](https://aimagelab.github.io/CoDE/) |
 [Paper](https://arxiv.org/pdf/2407.20337) |
 [Dataset web page](https://aimagelab.ing.unimore.it/imagelab/page.asp?IdPage=57) |
+[D<sup>3</sup> Test Set](https://ailb-web.ing.unimore.it/publicfiles/drive/elsa_dataset/d3_test.tar)
 [🤗 HuggingFace Dataset](https://huggingface.co/datasets/elsaEU/ELSA_D3) |
 [🤗 HuggingFace Model](https://huggingface.co/aimagelab) |
 
@@ -41,7 +42,22 @@ To try D<sup>3</sup> you can access it using
 from datasets import load_dataset
 elsa_data = load_dataset("elsaEU/ELSA_D3", split="train", streaming=True)
 ```
+The test set of D<sup>3</sup> is available at this link [D<sup>3</sup> Test Set](https://ailb-web.ing.unimore.it/publicfiles/drive/elsa_dataset/d3_test.tar) 
 
+## Inference
+Install the requirements by 
+```bash
+pip install requirements.txt
+```
+
+After downloading the test set of D<sup>3</sup>, you can use the following code to load the dataset and run the inference on the CoDE model.
+
+Substitute the path of the directories in ```dataset_path_d3.py```
+
+```python 
+python validate_d3.py --classificator_type "linear"
+# options for classificator_type are ["linear", "knn", "svm"]
+```
 ## Citation
 
 Please cite with the following BibTeX:
