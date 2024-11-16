@@ -22,9 +22,9 @@
 [🎯 Project web page](https://aimagelab.github.io/CoDE/) |
 [Paper](https://arxiv.org/pdf/2407.20337) |
 [Dataset web page](https://aimagelab.ing.unimore.it/imagelab/page.asp?IdPage=57) |
-[D<sup>3</sup> Test Set](https://ailb-web.ing.unimore.it/publicfiles/drive/elsa_dataset/d3_test.tar)
+[D<sup>3</sup> Test Set](https://ailb-web.ing.unimore.it/publicfiles/drive/elsa_dataset/d3_test.tar) |
 [🤗 HuggingFace Dataset](https://huggingface.co/datasets/elsaEU/ELSA_D3) |
-[🤗 HuggingFace Model](https://huggingface.co/aimagelab) |
+[🤗 HuggingFace Model](https://huggingface.co/aimagelab/CoDE) |
 
 The Diffusion-generated Deepfake Detection (D<sup>3</sup>) Dataset is a comprehensive collection designed for large-scale deepfake detection. It includes 9.2 million generated images, created using four state-of-the-art diffusion model generators. Each image is generated based on realistic textual descriptions from the LAION-400M dataset.
 
@@ -54,7 +54,8 @@ After downloading the test set of D<sup>3</sup>, you can use the following code 
 
 Substitute the path of the directories in ```dataset_path_d3.py```
 
-```python 
+```python
+cd CoDE_model
 python validate_d3.py --classificator_type "linear"
 # options for classificator_type are ["linear", "knn", "svm"]
 ```
