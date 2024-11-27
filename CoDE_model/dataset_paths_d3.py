@@ -23,7 +23,7 @@ DATASET_PATHS_D3 = [
         data_mode="ours",
         key="augm_gen_3",
     ),
-    ############################ WITHOUD TRANSFORMATIONS #########################################
+    ############################ WITHOUT TRANSFORMATIONS #########################################
     dict(
         real_path="/work/publicfiles/drive/elsa_dataset/d3_test/no_augm/real",
         fake_path="/work/publicfiles/drive/elsa_dataset/d3_test/no_augm/gen_0",
