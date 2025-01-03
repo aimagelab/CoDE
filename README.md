@@ -50,9 +50,9 @@ Install the requirements by
 pip install requirements.txt
 ```
 
-After downloading the test set of D<sup>3</sup>, you can use the following code to load the dataset and run the inference on the CoDE model.
+After downloading the test set of D<sup>3</sup> at the previous link, you can use the following code to load the dataset and run the inference on the CoDE model.
 
-Substitute the path of the directories in ```dataset_path_d3.py```
+Substitute the path of the directories in ```CoDE_model/dataset_paths_d3.py```
 
 ```python
 cd CoDE_model
