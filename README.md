@@ -70,3 +70,12 @@ Please cite with the following BibTeX:
   year={2024}
 }
 ```
+
+## Acknowledgements
+We acknowledge the CINECA award under the ISCRA initiative, for the availability of high-performance computing resources and support. This work has
+been supported by the Horizon Europe project “European Lighthouse on Safe and Secure AI (ELSA)” (HORIZON-CL4-2021-HUMAN-01-03), 
+co-funded by the European Union.
+
+<img src="images/elsa.jpg" alt="elsa" style="width:70px;"/> &nbsp;&nbsp; 
+<img src="images/FundedbytheEU.png" alt="europe" style="width:240px;"/>
+
