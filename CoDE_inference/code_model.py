@@ -85,7 +85,7 @@ if __name__ == "__main__":
     model.eval()
     model.model.to(device)
     y_pred = []
-    img = Image.open("206496010652.png").convert("RGB")
+    img = Image.open("images/elsa.jpg").convert("RGB")
 
     with torch.no_grad():
         # in_tens = model.processor(img, return_tensors='pt')['pixel_values']

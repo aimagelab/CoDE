@@ -55,7 +55,7 @@ After downloading the test set of D<sup>3</sup> at the previous link, you can us
 Substitute the path of the directories in ```CoDE_model/dataset_paths_d3.py```
 
 ```python
-cd CoDE_model
+cd CoDE_inference
 python validate_d3.py --classificator_type "linear"
 # options for classificator_type are ["linear", "knn", "svm"]
 ```
