@@ -1,0 +1,46 @@
+# Pretraining config file for all pre-training experiments
+# Datasets and shards configs
+cineca: True
+dataset_eval: elsa_v2_all
+# Dataset paths
+data_dir: /leonardo_scratch/large/userexternal/fcocchi0/deepfake/dataset/webdatasets_elsa_v2
+data_dir_eval_augm: /leonardo_scratch/large/userexternal/fcocchi0/deepfake/dataset/Elsa_datasetv2_test_fix/wds_test_small/transf
+data_dir_eval_no_augm: /leonardo_scratch/large/userexternal/fcocchi0/deepfake/dataset/Elsa_datasetv2_test_fix/wds_test_small/no_transf
+# Datasets shards
+val_shards_no_augm: dataset/shards/validation_set-no_transf-elsav2.shards
+val_shards_augm: dataset/shards/validation_set-transf-elsav2.shards
+linear_train_shards: dataset/shards/elsa_v2_train_transf.shards
+train_shards: dataset/shards/elsav2-training.shards
+# Dataloader configs
+workers_validate: 3
+validation_batch_size: 50
+data_len_eval: 4800
+data_len_linear: 9600
+# Logs configs
+multiple_evaluations: True
+# Training configs
+amp: True
+early_stopping: True
+classifier:
+  - linear
+  - knn
+  - svm
+distance: cosine
+patience_epochs: 6
+eval_metric: accuracy
+input_size:
+  - 3
+  - 224
+  - 224
+mean:
+  - 0.485
+  - 0.456
+  - 0.406
+std:
+  - 0.229
+  - 0.224
+  - 0.225
+no_prefetcher: True
+log_interval: 5
+plot_freq: 5
+# log_wandb: True
