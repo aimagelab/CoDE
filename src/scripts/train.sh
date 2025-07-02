@@ -6,6 +6,7 @@ MASTER_PORT=29500       # any free TCP port
 RDZV_ID=$(date +%s)     # unique job id; timestamp is fine
 # --------------------------------------
 
+cd ./src
 python -u -m torch.distributed.run --nnodes=1 --nproc_per_node=4 --rdzv_id=$RDZV_ID --rdzv_backend="c10d" --rdzv_endpoint="$MASTER_ADDR:$MASTER_PORT" --node_rank=0 --max_restarts=4 \
   "train.py" \
   --config "config/config-training.yaml" \
